@@ -1,21 +1,53 @@
-<div class="col-md-4 mt-4">
-    <div class="card profile-card-5">
-        <div class="card-img-block">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c" alt="Card image cap">
-        </div>
-        <div class="card-body pt-0">
-        <h2 class="card-title">Florence Garza</h2>
-        <p class="card-text">union repabmic party UNP</p>
-   
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Number 1</label>
-          </div>
-        
-        </div>
+<div class="home container">
+  <div class="view-header">
+      <div class="header-wrapper">
+          <div><p class="text-1" >Election - 2020</p></div>
+          <div><p class="text-2">Sri Lanka</p></div>
+      </div>
+  </div>
 
-    </div>
-    <p class="mt-3 w-100 float-left text-center"><strong>Card with Floting Picture</strong></p>
+  <div class="card-container">
+
+      <div class="card-wrapper" *ngFor="let candidate of candidateList" >
+
+          <div class="card-sub-container-4" style="background-color: #37474f;"></div>
+
+          <div class="card-sub-container-2">
+              <div><img class="image-1" [src]=candidate.candidateImage  alt="kusal_mendis_photo"/></div>
+          </div>
+
+          <div class="card-sub-container-6">
+              <p class="text-4">{{candidate.name}}</p>
+          </div>
+
+          <div class="card-sub-container-5">
+              <div class="card-sub-container-3">
+                  <div>Sign</div>
+                  <div>
+                      <div><img class="image-2" [src]=candidate.logo alt="kusal_mendis_logo" /></div>
+                  </div>
+              </div>
+
+              <div>
+                  <div class="card-sub-container-1">
+                      <div> <span class="text-3">Party</span></div>
+                      <div>{{candidate.partyName}}</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card-sub-container-7" style="background-color: #37474f;" >
+              <button class="btn-1" 
+                  [disabled]="voter.isVoted"
+                  [class.is-disbled]="isVoted(candidate.id)"
+                  (click)="vote(candidate.id)">Vote</button>
+          </div>
+
+      </div>
+  </div>
+
 </div>
 
-
+<!-- <div>
+  <div>Thank you for the vote</div>
+</div> -->

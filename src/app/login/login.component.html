@@ -1,27 +1,70 @@
-<div class="wrapper fadeInDown">
-    <div id="formContent">
-      <!-- Tabs Titles -->
-  
-      <!-- Icon -->
-      <div class="fadeIn first">
-        <i class="fas fa-vote-nay" alt="User Icon"></i>
-        
-        <span class="label">E-voting</span>
-        
-        <img src="" id="icon"  />
-      </div>
-  
-      <!-- Login Form -->
-      <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="NIC">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-        <input type="submit" class="fadeIn fourth" value="Log In">
-      </form>
-  
-      <!-- Remind Passowrd -->
-      <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
-      </div>
-  
+<!--  <form >
+    <div class="input">
+      <lable>Username</lable>
+      <input type="text" name="username" [(ngModel)]="Ilogin.Username">
+      
+      <span class="label">Label</span>
+      
     </div>
-  </div>
+    <div class="input">
+      <label><div class="form-group">
+        <label for=""></label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="Ilogin.password" id="" placeholder="">
+      </div>
+      <div class="input">
+        <input type="submit" value="Login" (click)="LoginUser()">
+      </div>
+    </div>
+  </form> -->
+
+  
+    <div class="container h-100">
+      <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+          <div class="d-flex justify-content-center">
+            <div class="brand_logo_container">
+              
+              <a href="#aboutModal" data-toggle="modal"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" height="100px" weight="50px" alt="Admin" class="rounded-circle p-1 bg-primary" ></a>
+              
+            </div>
+          </div>
+          <div class="d-flex justify-content-center form_container">
+            <form>
+              <div class="input-group mb-3">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" name="" class="form-control input_user" value="" placeholder="NIC">
+              </div>
+              <div class="input-group mb-2">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fas fa-key"></i></span>
+                </div>
+                <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+              </div>
+              <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customControlInline">
+                  <label class="custom-control-label" for="customControlInline">Remember me</label>
+                </div>
+              </div>
+                <div class="d-flex justify-content-center mt-3 login_container">
+             <button type="button" name="button" class="btn login_btn">Login</button>
+             </div>
+            </form>
+          </div>
+      
+          <div class="mt-4">
+            <div class="d-flex justify-content-center links">
+              Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+            </div>
+            <div class="d-flex justify-content-center links">
+              <a href="#">Forgot your password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  

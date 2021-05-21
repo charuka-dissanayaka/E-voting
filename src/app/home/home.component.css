@@ -1,37 +1,296 @@
-.profile-card-5{
-    margin-top:30px;
+[class*="col-"] {
+    width: 100%;
 }
-.profile-card-5 .btn{
-    border-radius:5px;
-    border-width: 15px;
-    text-transform:uppercase;
-    font-size:12px;
-    padding:7px 20px;
+
+.divider{
+    background-color: #bdbdbd;
+    height: 0.115vh;
+    margin-bottom: 0.5vh;
+    width: 80%;
 }
-.profile-card-5 .card-img-block {
-    width: 91%;
-    margin: 0 auto;
-    position: relative;
-    top: -20px;
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px){
+
+    .view-header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #607d8b;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-1 {
+        font-size:  0.5em;;
+        color: #ffffff;
+    }
+
+    .text-2 {
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+
+    .text-3{
+        color: #263238;
+    }
+
+    .text-4 {
+        font-size: 3vh;
+        color: #263238;
+        font-weight: 900;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: #eceff1;
+        width: 95vw;
+        height: auto;
+        margin: 1vw;
+        margin-bottom: 5vh;  
+    }
+
+    .card-sub-container-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .card-sub-container-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: -6vh;
+    }
+
+    .card-sub-container-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .card-sub-container-4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 10vh;
+    }
+
+    .card-sub-container-5 {
+        padding-left: 5vh;
+        padding-right: 5vh;
+        height: 10vh;
+        margin-bottom: 2vw;
+    }
+
+    .card-sub-container-6 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5vh;
+    }
+
+    .card-sub-container-7 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 2vh;
+    }
+
+    .image-1 {
+        height: 15vh;
+        width: 15vh;
+        border-radius: 50%;
+        border : 3px solid #ffffff;
+    }
+
+    .image-2 {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .btn-1 {
+        border: none;
+        background-color: #b0bec5;
+        color: #263238;
+        font-size: 1.2rem;
+        height: 5vh;
+        width: 10vh;
+    }
+
+    .is-disbled { 
+        background-color: #0d47a1;
+        color: #ffffff;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    .view-header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #607d8b;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-1 {
+        font-size: 2rem;
+        color: #ffffff;
+        padding-top: 5px;
+    }
+
+    .text-2 {
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+
+    .text-3{
+        color: #263238;
+    }
+
+    .text-4 {
+        font-size: 2vw;
+        color: #263238;
+        font-weight: 900;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: #eceff1;
+        width: 20vw;
+        height: auto;
+        margin: 1vw;
+        transition: all .2s ease-in-out;
+    }
+
+    .card-wrapper:hover {
+        transform: scale(1.1);
+    }
+
+    .card-sub-container-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .card-sub-container-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        margin-top: -9vh;
+    }
+
+    .card-sub-container-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .card-sub-container-4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 7vw;
+    }
+
+    .card-sub-container-5 {
+        height: 10vh;
+        margin-bottom: 2vw;
+    }
+
+    .card-sub-container-6 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+    }
+
+    .card-sub-container-7 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1vw;
+    }
+
+    .image-1 {
+        height: 8vw;
+        width: 8vw;
+        border-radius: 50%;
+        border : 3px solid #ffffff;
+    }
+
+    .image-2 {
+        height: 3vw;
+        width: 3vw;
+    }
+
     
-}
-.profile-card-5 .card-img-block img{
-    border-radius:5px;
-    box-shadow:0 0 10px rgba(0,0,0,0.63);
-}
-.profile-card-5 h2{
-    color:#160d69;
-    font-weight:600;
-}
-.profile-card-5 p{
-    font-size:30px;
-    font-weight:300;
-    padding: 20px;
-}
-.profile-card-5 .btn-primary{
-    background-color:#535d88;
-    border-color:#df160f;
-}
-.profile-card-5 .label{
-    font-size: 30px;
+    .btn-1 {
+        border: none;
+        background-color: #b0bec5;
+        color: #263238;
+        font-size: 1.2rem;
+        height: 5vh;
+        width: 10vh;
+    }
+
+    .is-disbled { 
+        background-color: #0d47a1;
+        color: #ffffff;
+    }
+
 }

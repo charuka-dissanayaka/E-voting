@@ -1,0 +1,49 @@
+.container{
+    border:5px;
+    box-sizing: border-box;
+}
+.body{
+    margin-top: 20px;
+    background-color: aqua;
+}
+
+.main{
+    padding: 15px;
+    font-family: sans-serif;
+
+}
+
+.sidebar{
+    background-color: rgb(26, 61, 110);
+    color: rgb(223, 215, 207);
+    height: 100%;
+    font-size: large;
+    
+}
+.sidebar a{
+    margin-left: 10px;
+    display: block;
+    color: rgb(255, 248, 248);
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+.spacer{
+    flex:auto
+}
+.sidebar .rounded-circle{
+    position: relative;
+}
+.h5 {
+    font: bold;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    background-color: rgb(170, 178, 207);
+}
